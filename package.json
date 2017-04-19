@@ -1,0 +1,19 @@
+{
+  "name": "faas-node-url-shortener",
+  "version": "0.0.1",
+  "description": "A FaaS function to generate shortened URLs via an external service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/developius/faas-node-url-shortener"
+  },
+  "author": "Finnian Anderson <finnian.io>",
+  "license": "MIT",
+  "dependencies": {
+    "get-stdin": "^5.0.1",
+    "request": "^2.81.0"
+  }
+}
