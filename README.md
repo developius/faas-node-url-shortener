@@ -7,7 +7,7 @@ You can execute the function like this:
 
 (or use the FaaS UI to send the URL)
 
-![](https://pbs.twimg.com/media/C9ljSysVwAAQpxj.jpg)
+![](https://pbs.twimg.com/media/C9yhdnPV0AAZSRC.jpg)
 
 ## Installation
 
