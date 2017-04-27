@@ -1,0 +1,14 @@
+FROM armhf/alpine:latest
+RUN apk --no-cache add nodejs
+
+ADD http://github.com/alexellis/faas/releases/download/0.5.3-alpha/fwatchdog-armhf /usr/bin/fwatchdog
+RUN chmod +x /usr/bin/fwatchdog
+
+WORKDIR /app
+ADD package.json .
+ADD index.js .
+
+RUN npm i
+
+ENV fprocess="node /app/index.js"
+CMD ["fwatchdog"]
