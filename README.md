@@ -1,4 +1,4 @@
-# faas-node-ascii
+# faas-node-url-shortener
 A [FaaS](http://get-faas.com) function to generate a shortened URL via an [external service](http://subr.pw)
 
 You can execute the function like this:
@@ -20,7 +20,7 @@ Please note that this function requires internet access to query the external AP
 Add this to `docker-compose.yml` and then redeploy the stack
 
 ```Dockerfile
-ascii:
+url-shortener:
     image: developius/faas-node-url-shortener:latest
     labels:
         function: "true"
@@ -40,7 +40,7 @@ ascii:
 Hit the `CREATE NEW FUNCTION` button and add these details:
 
 - Image: `developius/faas-node-url-shortener:latest`
-- Service name: `ascii`
+- Service name: `url-shortener`
 - fProcess: `node /app/index.js`
 - Network: `func_functions`
 
